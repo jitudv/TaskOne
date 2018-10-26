@@ -6,7 +6,7 @@ public class User
 {  
    @Id
    @GeneratedValue
-   public int id;
+   public long id;
    public String name;
    public String lastName;
    public String dateOfBirth;
@@ -23,10 +23,10 @@ public User(String name, String lastName, String dateOfBirth, String mobileNo, S
 public User() {
 	super();
 }
-public int getId() {
+public long getId() {
 	return id;
 }
-public void setId(int id) {
+public void setId(long id) {
 	this.id = id;
 }
 public String getName() {
